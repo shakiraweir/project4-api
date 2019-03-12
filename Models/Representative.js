@@ -9,4 +9,4 @@ const RepresentativeSchema = new Schema ({
     next: String
 })
 
-module.exports = mongoose.model('Representati e', RepresentativeSchema)
+module.exports = mongoose.model('Representative', RepresentativeSchema)

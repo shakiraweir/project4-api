@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 if (process.env.NODE_ENV == "production") {
     mongoose.connect(process.env.MLAB_URL)
   } else {
-    mongoose.connect("mongodb://localhost/representative");
+    mongoose.connect("mongodb://localhost/representative",  { useNewUrlParser: true });
   }
   
 mongoose.Promise = Promise

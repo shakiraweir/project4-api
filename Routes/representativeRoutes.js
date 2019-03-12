@@ -5,9 +5,9 @@ const Representative = mongoose.model('Representative')
 
 
 //show all representative page
-router.get('/show', (req, res) => {
-    Representative.find().then(representative => {
-        res.json(representative)
+router.get('/', (req, res) => {
+    Representative.find().then(result => {
+        res.json(result)
     })
 })
 

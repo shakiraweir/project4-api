@@ -5,9 +5,9 @@ const Senator = mongoose.model('Senator')
 
 
 //show all senator page
-router.get('/show', (req, res) => {
-    Senator.find().then(senator => {
-        res.json(senator)
+router.get('/', (req, res) => {
+    Senator.find().then(result => {
+        res.json(result)
     })
 })
 
