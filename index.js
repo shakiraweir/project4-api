@@ -37,3 +37,11 @@ app.get("/representative", (req, res) => {
           })
 
    } )
+
+  app.set('port', process.env.PORT || 1000)
+
+  app.listen(app.get('port'), () => {
+    console.log(`PORT: ${app.get('port')}`)
+  })
+
+
