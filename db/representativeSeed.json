@@ -1,11 +1,70 @@
-const mongoose = require('mongoose')
-
-if (process.env.NODE_ENV == "production") {
-    mongoose.connect(process.env.MLAB_URL)
-  } else {
-    mongoose.connect("mongodb://localhost/representative");
-  }
+[
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/W000804.jpg",
+    "name": "Robert J. Wittman",  
+    "party": "Republican",  
+    "since": "Since Dec 13, 2007"
+  },
+  {
+    "url": "http://bioguide.congress.gov/bioguide/photo/L/L000591.jpg",
+    "name": "Elaine Luria",  
+    "party": "Democrat",  
+    "since": "Since Jan 3, 2019"
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/S000185.jpg",
+    "name": "Robert C. Scott",  
+    "party": "Democrat",  
+    "since": "Since Jan 5, 1993"
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/M001200.jpg",
+    "name": "A. Donald McEachin",   
+    "party": "Democrat", 
+    "since": "Since Jan 3, 2017"
   
-mongoose.Promise = Promise
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/R000611.jpg",
+    "name": "Denver Riggleman", 
+    "party": "Republican", 
+    "since":" Since Jan 3, 2019"
 
-module.exports = mongoose
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/C001118.jpg",
+    "name": "Ben Cline",   
+    "party": "Republican",  
+    "since": "Since Jan 3, 2019"
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/B001292.jpg",
+    "name": "Donald Beyer",  
+    "party": "Democrat", 
+    "since": "Since Jan 6, 2015"
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/G000568.jpg",
+    "name": "Morgan Griffith",  
+    "party": "Republican", 
+    "since": " Since Jan 5, 2011"
+  },
+  {
+    "url": "https://theunitedstates.io/images/congress/225x275/C001078.jpg",
+    "name": "Gerald E. Connolly", 
+    "party": "Democrat",  
+    "since": " Since Jan 6, 2009"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Jennifer_Wexton%2C_official_portrait%2C_116th_Congress_%28cropped%29.jpg",
+    "name": "Jennifer Wexton", 
+    "party": "Democrat",  
+    "since": " Since Jan 3, 2019"
+  },
+  {
+    "url": "http://bioguide.congress.gov/bioguide/photo/S/S001209.jpg",
+    "name": "Abigail Spanberger",
+    "party": "Democrat",  
+    "since": " Since Jan 3, 2019"
+  }
+]
