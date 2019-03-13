@@ -12,10 +12,17 @@ router.get('/', (req, res) => {
 })
 
 //senator show one page
-router.get('/:id', (req, res) => {
+// router.get('/:id', (req, res) => {
+//     Senator.findOne({_id: req.params.id}).then(showOne => {
+//         res.json(showOne)
+//     })
+// })
+
+router.get('/senator', (req, res) => {
     Senator.findOne({_id: req.params.id}).then(showOne => {
         res.json(showOne)
     })
 })
+
 
 module.exports = router
