@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 })
 
 //representative show one page
-router.get('/representative', (req, res) => {
+router.get('/:id', (req, res) => {
     Representative.findOne({_id: req.params.id}).then(showOne => {
         res.json(showOne)
     })
